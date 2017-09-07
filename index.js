@@ -32,24 +32,8 @@ const Response = {
     }
 }
 
-const CustomError = (name=ERRORS.FAIL, message='') => {
-    let error = new Error(message)
-    error.name = name
-    return error
-}
-
-const ERRORS = {
-    BREAK_POINT: 'BreakPoint',
-    FAIL: 'Fail',
-    RETRY: 'Retry',
-    NOT_FOUND: 'NotFound',
-    VALIDATION: 'Validation',
-    RESOURCE_EXISTS: 'ResourceExists'
-}
-
-
 module.exports = {
     Response,
-    CustomError,
-    ERRORS
+    ValidationError: require('module/errors/ValidationError'),
+    ServerError: require('module/errors/ServerError')
 }
