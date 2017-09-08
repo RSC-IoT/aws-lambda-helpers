@@ -34,6 +34,7 @@ const Response = {
 
 module.exports = {
     Response,
-    ValidationError: require('./module/errors/ValidationError'),
-    ServerError: require('./module/errors/ServerError')
+    UnprocessableEntity: require('./module/errors/UnprocessableEntity'),
+    InternalServerError: require('./module/errors/InternalServerError'),
+    Forbidden: require('./module/errors/Forbidden')
 }
