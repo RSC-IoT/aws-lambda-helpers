@@ -35,6 +35,7 @@ const Response = {
 module.exports = {
     Response,
     Errors: {
+        Unauthorized: require('./module/errors/Unauthorized'),
         UnprocessableEntity: require('./module/errors/UnprocessableEntity'),
         InternalServerError: require('./module/errors/InternalServerError'),
         Forbidden: require('./module/errors/Forbidden')

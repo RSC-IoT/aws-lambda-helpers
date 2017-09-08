@@ -1,7 +1,7 @@
 {
   "name": "aws-lambda-helpers",
   "description": "Helpers for AWS Lambda functions.",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "main": "index.js",
   "license": "MIT",
   "repository": {
