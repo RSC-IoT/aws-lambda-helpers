@@ -38,6 +38,9 @@ module.exports = {
         Unauthorized: require('./module/errors/Unauthorized'),
         UnprocessableEntity: require('./module/errors/UnprocessableEntity'),
         InternalServerError: require('./module/errors/InternalServerError'),
-        Forbidden: require('./module/errors/Forbidden')
-    }
+        Forbidden: require('./module/errors/Forbidden'),
+        NotFound: require('./module/errors/NotFound'),
+        Fail: require('./module/errors/Fail')
+    },
+
 }
