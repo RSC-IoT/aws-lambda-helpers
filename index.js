@@ -4,6 +4,10 @@ const Response = {
         return this.buildResponse(200,body)
     },
 
+    resourceCreated(body) {
+        return this.buildResponse(201, body)
+    },
+
     error(body) {
         return this.buildResponse(500,body)
     },
@@ -14,6 +18,10 @@ const Response = {
 
     badRequest(body) {
         return this.buildResponse(400,body)
+    },
+
+    alreadyExists(body) {
+        return this.buildResponse(409,body)
     },
 
     validationError(body) {
@@ -40,7 +48,8 @@ module.exports = {
         InternalServerError: require('./module/errors/InternalServerError'),
         Forbidden: require('./module/errors/Forbidden'),
         NotFound: require('./module/errors/NotFound'),
-        Fail: require('./module/errors/Fail')
+        Fail: require('./module/errors/Fail'),
+        AlreadyExists: require('./module/errors/AlreadyExists')
     },
 
 }
