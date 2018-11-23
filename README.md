@@ -1,6 +1,9 @@
 # AWS Lambda Helpers
 Small commonly used helper functions to be used within with AWS Lambda.
 
+## Installation
+`npm install aws-lambda-helpers --save`
+
 ## Response
 Used to respond to an API Gateway event. Returns `statusCode` & `body`
 
