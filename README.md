@@ -1,5 +1,5 @@
 # AWS Lambda Helpers
-Small commonly used helper functions to be used within with AWS Lambda.
+Small commonly used helper functions to be used with AWS Lambda.
 
 ## Installation
 `npm install aws-lambda-helpers --save`
